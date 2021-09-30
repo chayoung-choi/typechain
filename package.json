@@ -1,0 +1,14 @@
+{
+  "name": "typechain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Learning Typescript by making a Blockchain with it",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^4.4.3"
+  }
+}
