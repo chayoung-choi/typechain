@@ -37,7 +37,7 @@ class Block {
   }
 }
 
-const genesisBlock: Block = new Block(0, "2020202020202", "", "Hello", 123456);
+const genesisBlock: Block = new Block(0, "init-block", "", "cyoung90", Math.round(new Date().getTime() / 1000));
 
 let blockchain: Block[] = [genesisBlock];
 
@@ -95,5 +95,11 @@ const addBlock = (candidateBlock: Block): void => {
     blockchain.push(candidateBlock);
   }
 };
+
+createNewBlock("second block");
+createNewBlock("third block");
+createNewBlock("fourth block");
+
+console.log(blockchain);
 
 export {};
